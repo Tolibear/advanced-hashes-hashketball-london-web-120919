@@ -248,17 +248,10 @@ def player_stats(player)
       stats.shift
       return stats
     end
-  
-  i = 0
-  while i < all_players.length do
-    if all_players[i][:player_name] == player
-      stats = all_players[i]
-      stats.shift
-      return stats
-    end
-    i += 1
-  end
+  }
 end
+
+
 
 def big_shoe_rebounds
   players = all_players
