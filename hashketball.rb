@@ -220,8 +220,8 @@ def player_numbers(team)
       stats[:players].each { |person|
         team_numbers << person[:number]
       }
-    else 
-      return "That team wasn't playing in this game"
+    # else 
+    #   return "That team wasn't playing in this game"
     end
   end
   team_numbers
