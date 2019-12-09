@@ -97,10 +97,56 @@ def game_hash
                                     :slam_dunks => 12 }]}}
 end
 
+# def all_players
+#   game = game_hash
+#   players = []
+#   i = 0
+#   while i < game[:home][:players].length
+#     players << game[:home][:players][i]
+#     i += 1
+#   end
+#   i = 0
+#   while i < game[:away][:players].length
+#     players << game[:away][:players][i]
+#     i += 1
+#   end
+#   players
+#   # binding.pry
+# end
+
+# all_players using each instead of while 
 def all_players
   game = game_hash
   players = []
+  game.each do |team, stats| 
+    stats[:players].each do |details|  
+      players << details
+    end
+  end
+end
+  
   i = 0
+  while i < game[:home][:players].length
+    players << game[:home][:players][i]
+    i += 1
+  end
+  i = 0
+  while i < game[:away][:players].length
+    players << game[:away][:players][i]
+    i += 1
+  end
+  players
+  # binding.pry
+end
+
+def all_players
+  game = game_hash
+  players = []
+  
+  game.each { |HomeOrAway, side| side }
+    side.each { |player| 
+    players <<  side[:]
+    i = 0
   while i < game[:home][:players].length
     players << game[:home][:players][i]
     i += 1
