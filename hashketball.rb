@@ -228,23 +228,7 @@ def player_numbers(team)
 end
 
   
-  if game[:home][:team_name] == team
-    i = 0
-    while i < game[:home][:players].length do
-      team_numbers << game[:home][:players][i][:number]
-      i += 1
-    end
-  elsif game[:away][:team_name] == team
-    i = 0
-    while i < game[:away][:players].length do
-      team_numbers << game[:away][:players][i][:number]
-      i += 1
-    end
-  else
-    return "That team wasn't playing in this game"
-  end
-  team_numbers
-end
+ 
 
 def player_stats(player)
   players = all_players
