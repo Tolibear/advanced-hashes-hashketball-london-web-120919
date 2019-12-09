@@ -226,18 +226,18 @@ def player_numbers(team)
 end
   
 # player_stats with while loop 
-def player_stats(player)
-  players = all_players
-  i = 0
-  while i < all_players.length do
-    if all_players[i][:player_name] == player
-      stats = all_players[i]
-      stats.shift
-      return stats
-    end
-    i += 1
-  end
-end
+# def player_stats(player)
+#   players = all_players
+#   i = 0
+#   while i < all_players.length do
+#     if all_players[i][:player_name] == player
+#       stats = all_players[i]
+#       stats.shift
+#       return stats
+#     end
+#     i += 1
+#   end
+# end
 
 # player_stats with each loop 
 def player_stats(player)
