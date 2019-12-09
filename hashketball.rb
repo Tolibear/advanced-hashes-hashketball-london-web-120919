@@ -97,6 +97,7 @@ def game_hash
                                     :slam_dunks => 12 }]}}
 end
 
+# all_players using while loop
 # def all_players
 #   game = game_hash
 #   players = []
@@ -126,8 +127,7 @@ def all_players
 end
 
 
-
-
+# num_points_scored using while loop
 def num_points_scored(player)
   players = all_players
   i = 0
