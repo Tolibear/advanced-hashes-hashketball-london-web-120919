@@ -224,10 +224,8 @@ def player_numbers(team)
   end
   team_numbers
 end
-
   
- 
-
+# player_stats with while loop 
 def player_stats(player)
   players = all_players
   i = 0
