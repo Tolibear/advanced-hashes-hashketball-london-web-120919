@@ -124,41 +124,9 @@ def all_players
   end
   players
 end
-  
-  i = 0
-  while i < game[:home][:players].length
-    players << game[:home][:players][i]
-    i += 1
-  end
-  i = 0
-  while i < game[:away][:players].length
-    players << game[:away][:players][i]
-    i += 1
-  end
-  players
-  # binding.pry
-end
 
-def all_players
-  game = game_hash
-  players = []
-  
-  game.each { |HomeOrAway, side| side }
-    side.each { |player| 
-    players <<  side[:]
-    i = 0
-  while i < game[:home][:players].length
-    players << game[:home][:players][i]
-    i += 1
-  end
-  i = 0
-  while i < game[:away][:players].length
-    players << game[:away][:players][i]
-    i += 1
-  end
-  players
-  # binding.pry
-end
+
+
 
 def num_points_scored(player)
   players = all_players
