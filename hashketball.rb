@@ -217,6 +217,7 @@ def player_numbers(team)
   team_numbers = []
   game.each do |team, stats|
     if team[:team_name] == team_name
+      binding.pry
       team[:players].each { |person|
         team_numbers << person[:number]
       }
