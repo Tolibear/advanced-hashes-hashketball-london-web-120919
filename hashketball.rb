@@ -146,6 +146,7 @@ def num_points_scored(player)
   players.each { |person|
     if person[:player_name] == player
       return person[:points]
+    end
   }
 end    
  
