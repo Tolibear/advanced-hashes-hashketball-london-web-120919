@@ -120,8 +120,7 @@ def all_players
   players = []
   game.each do |team, stats| 
     stats[:players].map { |details|  
-      players << details 
-    end
+      players << details }
   end
 end
   
