@@ -221,10 +221,12 @@ def player_numbers(team)
         team_numbers << person[:number]
       }
     else 
-      
+      return "That team wasn't playing in this game"
     end
   end
-  
+  team_numbers
+end
+
   
   if game[:home][:team_name] == team
     i = 0
