@@ -215,8 +215,8 @@ end
 def player_numbers(team)
   game = game_hash
   team_numbers = []
-  game.each do |team, stats|
-    if stats[:team_name] == team_name
+  game.each do |side, stats|
+    if stats[:team_name] == team
       stats[:players].each { |person|
         team_numbers << person[:number]
       }
