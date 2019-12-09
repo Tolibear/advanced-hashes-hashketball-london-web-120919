@@ -220,7 +220,11 @@ def player_numbers(team)
       team[:players].each { |person|
         team_numbers << person[:number]
       }
+    else 
+      
     end
+  end
+  
   
   if game[:home][:team_name] == team
     i = 0
