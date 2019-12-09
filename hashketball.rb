@@ -127,19 +127,7 @@ def all_players
 end
 
 
-# num_points_scored using while loop
-def num_points_scored(player)
-  players = all_players
-  i = 0
-  while i < all_players.length do
-    if all_players[i][:player_name] == player
-      return all_players[i][:points]
-    end
-    i += 1
-  end
-end
-
-# num_points_scored using while loop
+# # num_points_scored using while loop
 # def num_points_scored(player)
 #   players = all_players
 #   i = 0
@@ -150,6 +138,18 @@ end
 #     i += 1
 #   end
 # end
+
+num_points_scored using while loop
+def num_points_scored(player)
+  players = all_players
+  i = 0
+  while i < all_players.length do
+    if all_players[i][:player_name] == player
+      return all_players[i][:points]
+    end
+    i += 1
+  end
+end
 
 def shoe_size(player)
   players = all_players
