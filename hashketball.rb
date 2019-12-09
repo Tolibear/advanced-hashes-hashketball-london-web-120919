@@ -257,3 +257,7 @@ def big_shoe_rebounds
   biggest_shoe = players.max_by { |value| value[:shoe] }
   biggest_shoe[:rebounds]
 end
+
+def most_points_scored
+  
+end
