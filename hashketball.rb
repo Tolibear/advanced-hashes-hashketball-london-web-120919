@@ -149,7 +149,7 @@ def num_points_scored(player)
   }
 end    
  
-# # shoe_size using while loop
+# shoe_size using while loop
 # def shoe_size(player)
 #   players = all_players
 #   i = 0
@@ -160,6 +160,8 @@ end
 #     i += 1
 #   end
 # end
+
+
 
 def team_colors(team)
   game = game_hash
