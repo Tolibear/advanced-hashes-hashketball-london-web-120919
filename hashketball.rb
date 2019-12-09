@@ -185,12 +185,12 @@ end
 # team_colors using each
 def team_colors(team)
   game = game_hash
-  if game[:home][:team_name] == team
-    return game[:home][:colors]
-  elsif game[:away][:team_name] == team
-    return game[:away][:colors]
-  else
-    return "That team wasn't playing in this game"
+  game.each do |team, stats|
+    if stats[:team_name] == team
+      return game[:home][:colors]
+    else
+      return "That team wasn't playing in this game"
+    end
   end
 end
 
