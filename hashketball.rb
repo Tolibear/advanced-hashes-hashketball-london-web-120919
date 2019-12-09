@@ -186,12 +186,11 @@ end
 def team_colors(team)
   game = game_hash
   game.each do |side|
-      if side[:team_name] == team
+    if side[:team_name] == team
       return side[:colors]
-    else
-      return "That team wasn't playing in this game"
     end
   end
+  return "That team wasn't playing in this game"
 end
 
 def team_names
