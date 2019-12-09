@@ -146,7 +146,7 @@ def num_points_scored(player)
   players.each { |person|
     if person[:player_name] == player
       return person[:points]
-    end
+  }
       
   i = 0
   while i < all_players.length do
