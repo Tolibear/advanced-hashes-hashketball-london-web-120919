@@ -142,7 +142,6 @@ end
 # num_points_scored using each loop
 def num_points_scored(player)
   players = all_players
-  
   players.each { |person|
     if person[:player_name] == player
       return person[:points]
