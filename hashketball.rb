@@ -147,15 +147,8 @@ def num_points_scored(player)
     if person[:player_name] == player
       return person[:points]
   }
-      
-  i = 0
-  while i < all_players.length do
-    if all_players[i][:player_name] == player
-      return all_players[i][:points]
-    end
-    i += 1
-  end
-end
+end    
+ 
 
 def shoe_size(player)
   players = all_players
