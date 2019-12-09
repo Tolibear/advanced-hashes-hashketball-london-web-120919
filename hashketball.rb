@@ -243,7 +243,7 @@ end
 def player_stats(player)
   players = all_players
   players.each { |person|
-    if person[:player_name] == player_name
+    if person[:player_name] == player
       stats = person
       stats.shift
       return stats
