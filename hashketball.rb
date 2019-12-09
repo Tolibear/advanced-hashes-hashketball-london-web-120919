@@ -149,17 +149,17 @@ def num_points_scored(player)
   }
 end    
  
-
-def shoe_size(player)
-  players = all_players
-  i = 0
-  while i < all_players.length do
-    if all_players[i][:player_name] == player
-      return all_players[i][:shoe]
-    end
-    i += 1
-  end
-end
+# # shoe_size using while loop
+# def shoe_size(player)
+#   players = all_players
+#   i = 0
+#   while i < all_players.length do
+#     if all_players[i][:player_name] == player
+#       return all_players[i][:shoe]
+#     end
+#     i += 1
+#   end
+# end
 
 def team_colors(team)
   game = game_hash
