@@ -139,9 +139,15 @@ end
 #   end
 # end
 
-num_points_scored using while loop
+# num_points_scored using each loop
 def num_points_scored(player)
   players = all_players
+  
+  players.each { |person|
+    if person[:player_name] == player
+      return person[:points]
+    end
+      
   i = 0
   while i < all_players.length do
     if all_players[i][:player_name] == player
