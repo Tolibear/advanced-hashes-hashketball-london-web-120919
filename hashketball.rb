@@ -119,8 +119,8 @@ def all_players
   game = game_hash
   players = []
   game.each do |team, stats| 
-    stats[:players].map  do |details|  
-      players << details
+    stats[:players].map { |details|  
+      players << details 
     end
   end
 end
