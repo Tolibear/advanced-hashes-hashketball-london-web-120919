@@ -215,6 +215,13 @@ end
 def player_numbers(team)
   game = game_hash
   team_numbers = []
+  game.each do |team, stats|
+    if team[:team_name] == team_name
+      team[:players].each { |person|
+        team_numbers << person[:number]
+      }
+    end
+  
   if game[:home][:team_name] == team
     i = 0
     while i < game[:home][:players].length do
