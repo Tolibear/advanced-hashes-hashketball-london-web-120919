@@ -171,16 +171,16 @@ def shoe_size(player)
   }
 end
 
-def team_colors(team)
-  game = game_hash
-  if game[:home][:team_name] == team
-    return game[:home][:colors]
-  elsif game[:away][:team_name] == team
-    return game[:away][:colors]
-  else
-    return "That team wasn't playing in this game"
-  end
-end
+# def team_colors(team)
+#   game = game_hash
+#   if game[:home][:team_name] == team
+#     return game[:home][:colors]
+#   elsif game[:away][:team_name] == team
+#     return game[:away][:colors]
+#   else
+#     return "That team wasn't playing in this game"
+#   end
+# end
 
 def team_names
   game = game_hash
