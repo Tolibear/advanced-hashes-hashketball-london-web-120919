@@ -239,6 +239,20 @@ def player_stats(player)
   end
 end
 
+# player_stats with each loop 
+def player_stats(player)
+  players = all_players
+  i = 0
+  while i < all_players.length do
+    if all_players[i][:player_name] == player
+      stats = all_players[i]
+      stats.shift
+      return stats
+    end
+    i += 1
+  end
+end
+
 def big_shoe_rebounds
   players = all_players
   biggest_shoe = players.max_by { |value| value[:shoe] }
